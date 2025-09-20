@@ -386,7 +386,7 @@ const AttendanceDashboard = () => {
                       setTimeout(() => {
                         toast({
                           title: "Student Checked In",
-                          description: "John Smith has checked in via QR code",
+                          description: "Nafees has checked in via QR code",
                           variant: "success",
                         });
                       }, 3000);
@@ -438,7 +438,7 @@ const AttendanceDashboard = () => {
                           setTranscript("Emma Brown, ID 1234");
                           toast({
                             title: "Voice Recognized",
-                            description: "Emma Brown has checked in via voice",
+                            description: "Nafees has checked in via voice",
                             variant: "success",
                           });
                           setIsListening(false);
