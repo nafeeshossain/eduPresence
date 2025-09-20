@@ -58,15 +58,15 @@ const AttendanceDashboard = () => {
   };
 
   const recentActivity = [
-    { id: 1, student: "Alice Johnson", action: "Check-in via QR", time: "09:15 AM", status: "present" },
-    { id: 2, student: "Bob Smith", action: "Voice check-in", time: "09:12 AM", status: "present" },
-    { id: 3, student: "Carol Davis", action: "Manual entry", time: "09:08 AM", status: "late" },
+    { id: 1, student: "Nafees Hossain", action: "Check-in via QR", time: "09:15 AM", status: "present" },
+    { id: 2, student: "Souvik Chel", action: "Voice check-in", time: "09:12 AM", status: "present" },
+    { id: 3, student: "Dhritiman Bera", action: "Manual entry", time: "09:08 AM", status: "late" },
   ];
 
   const riskStudents = [
     { 
       id: 1, 
-      name: "David Wilson", 
+      name: "Md Sahil Ansari", 
       riskLevel: "high", 
       attendanceRate: 45, 
       engagementScore: 32,
@@ -75,7 +75,7 @@ const AttendanceDashboard = () => {
     },
     { 
       id: 2, 
-      name: "Emma Brown", 
+      name: "Parthib Mahapatra", 
       riskLevel: "medium", 
       attendanceRate: 72, 
       engagementScore: 58,
@@ -84,7 +84,7 @@ const AttendanceDashboard = () => {
     },
     { 
       id: 3, 
-      name: "Frank Miller", 
+      name: "Suvrajit Patari", 
       riskLevel: "low", 
       attendanceRate: 88, 
       engagementScore: 75,
