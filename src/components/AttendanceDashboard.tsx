@@ -58,9 +58,9 @@ const AttendanceDashboard = () => {
   };
 
   const recentActivity = [
-    { id: 1, student: "Nafees Hossain", action: "Check-in via QR", time: "09:15 AM", status: "present" },
-    { id: 2, student: "Souvik Chel", action: "Voice check-in", time: "09:12 AM", status: "present" },
-    { id: 3, student: "Dhritiman Bera", action: "Manual entry", time: "09:08 AM", status: "late" },
+    { id: 1, student: "Nafees Hossain", action: "Check-in via QR", time: "08:30 AM", status: "present" },
+    { id: 2, student: "Souvik Chel", action: "Voice check-in", time: "08:45 AM", status: "present" },
+    { id: 3, student: "Dhritiman Bera", action: "Manual entry", time: "09:15 AM", status: "late" },
   ];
 
   const riskStudents = [
