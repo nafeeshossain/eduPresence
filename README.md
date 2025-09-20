@@ -179,6 +179,7 @@ If you have a suggestion that would make this better, please fork the repo and c
 <p align="center">
   <img src="Screenshots/logo.png" width="200" alt="Creative Techtians Logo"/>
 </p>
+<p align="center">EduPresence Built with ❤ by <b>Creative Techtians</b></p>
 
 
 
