@@ -179,8 +179,4 @@ If you have a suggestion that would make this better, please fork the repo and c
 
 ---
 
-<div align="center">
 
-**Made with ❤️ by the EduPresence Team**
-
-</div>
