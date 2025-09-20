@@ -1,3 +1,4 @@
+import { useAuth } from "@/hooks/useAuth";
 import { useState, useRef, useEffect } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -34,6 +35,7 @@ const AttendanceDashboard = () => {
   
   // Check-in states
   const [qrDialogOpen, setQrDialogOpen] = useState(false);
+  const { user } = useAuth();
   const [voiceDialogOpen, setVoiceDialogOpen] = useState(false);
   const [manualDialogOpen, setManualDialogOpen] = useState(false);
   const [studentName, setStudentName] = useState("");
@@ -386,10 +388,11 @@ const AttendanceDashboard = () => {
                       setTimeout(() => {
                         toast({
                           title: "Student Checked In",
-                          description: "John Smith has checked in via QR code",
+                          description: `${user?.user_metadata?.full_name || "Unknown User"} has checked in via QR code`,
                           variant: "success",
                         });
                       }, 3000);
+
                     }}
                   >
                     Generate QR Code
@@ -435,14 +438,15 @@ const AttendanceDashboard = () => {
                         
                         // Simulate voice recognition after 3 seconds
                         setTimeout(() => {
-                          setTranscript("Emma Brown, ID 1234");
+                          setTranscript(`${user?.user_metadata?.full_name || "Unknown User"}, ID ${user?.id || "N/A"}`);
                           toast({
                             title: "Voice Recognized",
-                            description: "Emma Brown has checked in via voice",
+                            description: `${user?.user_metadata?.full_name || "Unknown User"} has checked in via voice`,
                             variant: "success",
                           });
                           setIsListening(false);
                         }, 3000);
+
                       } else {
                         setIsListening(false);
                         toast({
